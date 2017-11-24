@@ -34,6 +34,10 @@ def configuration(parent_package='', top_path=None):
                          ['quaternion.c', 'numpy_quaternion.c'],
                          depends=['quaternion.c', 'quaternion.h', 'numpy_quaternion.c'],
                          extra_compile_args=compile_args, )
+    config.add_extension('numpy_dual_quaternion',
+                         ['dual_quaternion.c', 'numpy_dual_quaternion.c'],
+                         depends=['dual_quaternion.c', 'dual_quaternion.h', 'numpy_dual_quaternion.c'],
+                         extra_compile_args=compile_args, )
     return config
 
 
