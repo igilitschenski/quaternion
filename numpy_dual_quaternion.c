@@ -1507,7 +1507,7 @@ PyMODINIT_FUNC initnumpy_dual_quaternion(void) {
   dual_quaternion_descr->byteorder = '=';
   dual_quaternion_descr->flags = 0;
   dual_quaternion_descr->type_num = 0; // assigned at registration
-  dual_quaternion_descr->elsize = 8*4;
+  dual_quaternion_descr->elsize = 8*8;
   dual_quaternion_descr->alignment = 8;
   dual_quaternion_descr->subarray = NULL;
   dual_quaternion_descr->fields = NULL;
